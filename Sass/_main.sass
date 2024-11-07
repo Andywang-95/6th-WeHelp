@@ -1,7 +1,12 @@
+html
+    scroll-behavior: smooth
+body
+    margin: 0 5px
 .header
+    background-color: #fff
     position: fixed
-    max-width: 60%
     margin: auto
+    top: 0
     left: 0
     right: 0
     padding: 15px
@@ -14,10 +19,49 @@
 .container
     max-width: 95%
     margin: auto
+    margin-bottom: 20px
     display: flex
 .outline
     position: fixed
-    padding: 5px
+    overflow-y: auto
+    padding: 10px
     padding-right: 10px
     max-width: 20%
     min-width: 150px
+    line-height: 1.2
+    list-style-type: circle
+    list-style-position: inside
+    font-size: 13px
+    &::-webkit-scrollbar
+        background-color: #bbb
+        border-radius: 10px
+    &::-webkit-scrollbar-thumb
+        background-color: #555
+        border-radius: 10px
+.item
+    padding: 3px 0
+    a
+        position: relative
+        display: inline-block
+    p
+        padding: 4px
+        &:hover:before
+            display: block
+            position: absolute
+            content: ''
+            width: 8px
+            height: 8px
+            border-top: 1px solid #bbb
+            border-left: 1px solid #bbb
+            top: 0
+            left: 0
+        &:hover:after
+            display: block
+            position: absolute
+            content: ''
+            width: 8px
+            height: 8px
+            border-bottom: 1px solid #bbb
+            border-right: 1px solid #bbb
+            bottom: 0
+            right: 0
