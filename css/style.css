@@ -58,6 +58,8 @@ html {
 
 body {
   margin: 0 5px;
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 .header {
@@ -71,7 +73,7 @@ body {
 }
 .header p {
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
 }
 .header p span {
   font-family: Arial, Helvetica, sans-serif;
@@ -93,9 +95,7 @@ body {
   max-width: 20%;
   min-width: 150px;
   line-height: 1.2;
-  list-style-type: circle;
-  list-style-position: inside;
-  font-size: 13px;
+  font-size: 20px;
 }
 .outline::-webkit-scrollbar {
   background-color: #bbb;
@@ -114,16 +114,16 @@ body {
   display: inline-block;
 }
 .item p {
-  padding: 4px;
+  padding: 15px 4px;
 }
 .item p:hover:before {
   display: block;
   position: absolute;
   content: "";
-  width: 8px;
-  height: 8px;
-  border-top: 1px solid #bbb;
-  border-left: 1px solid #bbb;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #bbb;
+  border-left: 3px solid #bbb;
   top: 0;
   left: 0;
 }
@@ -131,10 +131,17 @@ body {
   display: block;
   position: absolute;
   content: "";
-  width: 8px;
-  height: 8px;
-  border-bottom: 1px solid #bbb;
-  border-right: 1px solid #bbb;
+  width: 15px;
+  height: 15px;
+  border-bottom: 3px solid #bbb;
+  border-right: 3px solid #bbb;
   bottom: 0;
   right: 0;
+}
+
+.answer p {
+  text-indent: 2em;
+}
+.answer br {
+  text-indent: 2em;
 }/*# sourceMappingURL=style.css.map */
