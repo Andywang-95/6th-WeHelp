@@ -4,8 +4,12 @@ body
     margin: 0 5px
     font-size: 25px
     line-height: 1.5
+    background-image: url("../img/bg2.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
 .header
-    background-color: #fff
+    background-color: #eaeaea
     position: fixed
     margin: auto
     top: 0
@@ -42,31 +46,59 @@ body
     padding: 3px 0
     a
         position: relative
-        display: inline-block
     p
+        text-align: center
         padding: 15px 4px
+        // &:hover:before
+        //     display: block
+        //     position: absolute
+        //     content: ''
+        //     width: 15px
+        //     height: 15px
+        //     border-top: 3px solid #bbb
+        //     border-left: 3px solid #bbb
+        //     top: 0
+        //     left: 0
+        // &:hover:after
+        //     display: block
+        //     position: absolute
+        //     content: ''
+        //     width: 15px
+        //     height: 15px
+        //     border-bottom: 3px solid #bbb
+        //     border-right: 3px solid #bbb
+        //     bottom: 0
+        //     right: 0
         &:hover:before
             display: block
             position: absolute
             content: ''
-            width: 15px
-            height: 15px
-            border-top: 3px solid #bbb
-            border-left: 3px solid #bbb
             top: 0
-            left: 0
+            border: 2px solid
+            width: 100%
+            border-image: linear-gradient(to right, #b5b5b5, #0000007e 50%, #b5b5b5) 5
         &:hover:after
             display: block
             position: absolute
             content: ''
-            width: 15px
-            height: 15px
-            border-bottom: 3px solid #bbb
-            border-right: 3px solid #bbb
             bottom: 0
-            right: 0
+            border: 2px solid
+            width: 100%
+            border-image: linear-gradient(to right, #b5b5b5, #0000007e 50%, #b5b5b5) 5
+.content
+    margin-left: 20px
+    list-style-type: decimal
+    .inner-line
+        border: 0
+        height: 2px
+        background: linear-gradient(to right, #a8a8a8, #000 30%, #a8a8a8)
+    .outer-line
+        border: 0
+        height: 15px
+        background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 2px, transparent 1px, transparent 6px)
+        margin-bottom: 35px
 .title
-    background-color: #fff
+    font-weight: bolder
 .answer
     p
         text-indent: 2em
