@@ -114,12 +114,34 @@ body
     padding: 10px 0
     ol
         display: flex
-        justify-content: space-between
+        justify-content: space-evenly
         gap: 30px
     li
         border: 1px solid #000
+        display: flex
+        flex-direction: column
+        padding: 5px
     span
         white-space: nowrap
+        display: block
         // text-overflow: ellipsis
     img
         min-width: 220px
+        border-radius: 3px
+.github
+    a:hover
+        img
+            content: url("../img/GitHub_Logo_White.png")
+            background-color: #000
+
+.pic
+    display: flex
+    flex-direction: column
+    a
+        align-self: center
+        img
+            border: 2px solid transparent
+        &:hover
+            img
+                padding: -2px
+                border: 2px solid #000
