@@ -185,17 +185,23 @@ body {
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
+  gap: 15px;
   padding: 5px;
 }
 .products span {
   white-space: nowrap;
   display: block;
+  color: #888888;
 }
 .products img {
   min-width: 220px;
   border-radius: 3px;
 }
 
+.github a img {
+  border: 1px solid #000;
+  content: url("../img/GitHub_Logo.png");
+}
 .github a:hover img {
   content: url("../img/GitHub_Logo_White.png");
   background-color: #000;

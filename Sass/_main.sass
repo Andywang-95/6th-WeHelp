@@ -120,19 +120,24 @@ body
         border: 1px solid #000
         display: flex
         flex-direction: column
+        gap: 15px
         padding: 5px
     span
         white-space: nowrap
         display: block
-        // text-overflow: ellipsis
+        color: #888888
     img
         min-width: 220px
         border-radius: 3px
 .github
-    a:hover
+    a
         img
-            content: url("../img/GitHub_Logo_White.png")
-            background-color: #000
+            border: 1px solid #000
+            content: url("../img/GitHub_Logo.png")
+        &:hover
+            img
+                content: url("../img/GitHub_Logo_White.png")
+                background-color: #000
 
 .pic
     display: flex
