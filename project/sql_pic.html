@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETools程式畫面</title>
+    <link rel="stylesheet" href="../css/project2.css">
+</head>
+<body>
+    <div class="overview">
+        <p>這個零件資料庫是我獨立從頭開始建立的，最初時有做多表串聯，但是因為軟體廠商提供的更新程式只能針對一張Table做更新，所以才改用單表設計，將全部共100多個欄位全部放在一張表中，再用View切分開做不同零件的應用和維護</p>
+        <p>這其中我花最多時間的就是寫Toggle，踩了很多坑才完成，雖然效能有點低（用cursor來掃描，遇到多筆資料的更新就會很慢），但是還是能滿足基本的需求，畢竟後續維護都是丹筆資料更新爲主，問題不大</p>
+    </div>
+    <ul class="imgs">
+        <li>
+            <img src="../img/資料庫.png" alt="資料庫table">
+        </li>
+        <li>
+            <img src="../img/log toggle.png" alt="toggle code">
+        </li>
+        <li>
+            <img src="../img/資料庫log.png" alt="log記錄">
+        </li>
+    </ul>
+</body>
+</html>
